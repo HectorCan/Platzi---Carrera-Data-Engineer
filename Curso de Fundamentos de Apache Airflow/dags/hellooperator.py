@@ -1,5 +1,10 @@
 from airflow.models.baseoperator import BaseOperator
+'''
+  @author Hector Can
 
+  Esto es un operator basico, todavia falta determinar que tipo de uso podria tener
+  un operador custom.
+'''
 class HelloOperator(BaseOperator):
     
     def __init__(self, name: str, **kwargs):
